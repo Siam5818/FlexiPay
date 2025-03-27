@@ -1,22 +1,14 @@
 package sn.groupeisi.flexipay.utils;
 
-import jakarta.persistence.EntityManager;
+import sn.groupeisi.flexipay.services.EmailService;
 
 public class DatabaseTest {
     public static void main(String[] args) {
-        EntityManager em = null;
+        /*EmailService emailService = new EmailService();
+        String toEmail = "msihamoudinedk@groupeisi.com"; // Remplace par l'adresse email du destinataire
+        String subject = "Test Email de la part de Flexipay";
+        String body = "Ceci est un test d'envoi d'email avec Jakarta Mail. Sur ton application Java";
 
-        try {
-            // Obtention de l'EntityManager via JpaUtil
-            em = JpaUtil.getEntityManager();
-            System.out.println("Connexion à la base de données réussie !");
-        } catch (Exception e) {
-            System.err.println("Erreur de connexion à la base de données : " + e.getMessage());
-            e.printStackTrace();
-        } finally {
-            // Fermer l'EntityManager et l'EntityManagerFactory proprement
-            if (em != null && em.isOpen()) em.close();
-            JpaUtil.closeEntityManagerFactory();
-        }
+        emailService.sendEmail(toEmail, subject, body); // Envoi de l'email*/
     }
 }

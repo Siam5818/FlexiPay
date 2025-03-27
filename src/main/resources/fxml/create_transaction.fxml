@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #FFEAB6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.groupeisi.flexipay.controllers.CreateTransactionController">
+
+    <VBox alignment="CENTER" layoutX="12.0" layoutY="20.0" prefHeight="450.0" prefWidth="579.0" spacing="12">
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Nouvelle Transaction" />
+
+        <HBox spacing="10">
+            <Label text="Numéro de Carte:">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets bottom="9.0" right="11.0" />
+            </padding>
+            <HBox.margin>
+               <Insets bottom="2.0" left="130.0" right="4.0" top="3.0" />
+            </HBox.margin>
+         </Label>
+            <TextField fx:id="numeroCarteField" promptText="Entrez le numéro de la carte">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Montant:">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets bottom="9.0" right="11.0" />
+            </padding>
+            <HBox.margin>
+               <Insets bottom="2.0" left="130.0" right="4.0" top="3.0" />
+            </HBox.margin></Label>
+            <TextField fx:id="montantField" promptText="Entrez le montant" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Commerçant:">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets bottom="9.0" right="11.0" />
+            </padding>
+            <HBox.margin>
+               <Insets bottom="2.0" left="130.0" right="4.0" top="3.0" />
+            </HBox.margin></Label>
+            <TextField fx:id="commercantField" promptText="Nom du commerçant (optionnel)" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Code PIN:">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets bottom="9.0" right="11.0" />
+            </padding>
+            <HBox.margin>
+               <Insets bottom="2.0" left="130.0" right="4.0" top="3.0" />
+            </HBox.margin></Label>
+            <PasswordField fx:id="codePinField" promptText="Entrez votre code PIN" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Type de Transaction:">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets bottom="9.0" right="11.0" />
+            </padding>
+            <HBox.margin>
+               <Insets bottom="2.0" left="130.0" right="4.0" top="3.0" />
+            </HBox.margin></Label>
+            <ComboBox fx:id="typeTransactionCombo" promptText="Sélectionner le type" />
+        </HBox>
+
+        <HBox spacing="10" />
+
+        <Button fx:id="effectuerTransactionBtn" onAction="#effectuerTransaction" style="-fx-font-size: 14px; -fx-background-color: #4CAF50; -fx-text-fill: white;" text="Initier la Transaction" />
+    </VBox>
+
+</AnchorPane>

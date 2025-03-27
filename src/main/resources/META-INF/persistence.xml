@@ -11,6 +11,7 @@
         <class>sn.groupeisi.flexipay.entities.Litige</class>
         <class>sn.groupeisi.flexipay.entities.Fidelite</class>
         <class>sn.groupeisi.flexipay.entities.Admin</class>
+        <class>sn.groupeisi.flexipay.entities.OtpAuthentification</class>
 
         <properties>
             <!-- Configuration et Connexion PostgreSQL -->

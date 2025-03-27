@@ -7,10 +7,15 @@ module sn.groupeisi.flexipay {
     requires org.hibernate.orm.core;
     requires java.sql;
     requires static lombok;
+    requires TrayNotification;
+    requires twilio;
+    requires jakarta.mail;
 
-    opens sn.groupeisi.flexipay to javafx.fxml;
+    // Ouverture des packages pour Hibernate et JavaFX
     opens sn.groupeisi.flexipay.entities to org.hibernate.orm.core;
+    opens sn.groupeisi.flexipay.controllers to javafx.fxml;
+    opens sn.groupeisi.flexipay to javafx.fxml;
 
     exports sn.groupeisi.flexipay;
-    exports sn.groupeisi.flexipay.controllers;
+
 }

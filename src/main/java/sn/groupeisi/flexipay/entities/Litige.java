@@ -37,4 +37,12 @@ public class Litige {
     @OneToOne
     @JoinColumn(name = "transaction_id", nullable = false)
     private Transaction transaction;
+
+    public Litige(String motif, Admin admin, Transaction transaction) {
+        this.motif = motif;
+        this.dateSignalement = LocalDate.now();
+        this.statutLitige = StatutLitige.EN_COURS;
+        this.admin = admin;
+        this.transaction = transaction;
+    }
 }

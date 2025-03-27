@@ -27,4 +27,10 @@ public class Fidelite {
     @OneToOne
     @JoinColumn(name = "client_id", nullable = false)
     private Client client;
+
+    public Fidelite(Client client) {
+        this.client = client;
+        this.pointsAcquis = 0;
+        this.dateDernierCredit = LocalDate.now();
+    }
 }

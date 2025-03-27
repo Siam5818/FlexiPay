@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.groupeisi.flexipay.controllers.CreateClientController">
+   <children>
+      <Pane layoutX="25.0" layoutY="10.0" prefHeight="530.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 4);" stylesheets="@styles.css">
+         <children>
+            <Label layoutX="50.0" layoutY="30.0" style="-fx-font-weight: bold; -fx-font-size: 20px;" text="Informations du Client" />
+
+            <!-- Nom et Prénom -->
+            <Label layoutX="40.0" layoutY="80.0" text="Nom :" />
+            <TextField fx:id="txt_nom" layoutX="40.0" layoutY="100.0" prefWidth="220.0" promptText="Nom du client" />
+
+            <Label layoutX="330.0" layoutY="80.0" text="Prénom :" />
+            <TextField fx:id="txt_prenom" layoutX="330.0" layoutY="100.0" prefWidth="220.0" promptText="Prénom du client" />
+
+            <!-- Adresse et Téléphone -->
+            <Label layoutX="40.0" layoutY="140.0" text="Adresse :" />
+            <TextField fx:id="txt_adresse" layoutX="40.0" layoutY="160.0" prefWidth="220.0" promptText="Adresse du client" />
+
+            <Label layoutX="330.0" layoutY="140.0" text="Téléphone :" />
+            <TextField fx:id="txt_telephone" layoutX="330.0" layoutY="160.0" prefWidth="220.0" promptText="Téléphone du client" />
+
+            <!-- Email -->
+            <Label layoutX="40.0" layoutY="200.0" text="Email :" />
+            <TextField fx:id="txt_email" layoutX="40.0" layoutY="220.0" prefWidth="510.0" promptText="Email du client" />
+
+            <!-- Informations Carte Bancaire -->
+            <Label layoutX="50.0" layoutY="270.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="Informations de la Carte" />
+
+            <Label layoutX="40.0" layoutY="310.0" text="Type de Carte :" />
+            <ComboBox fx:id="combo_typeCarte" layoutX="40.0" layoutY="330.0" prefWidth="220.0" promptText="Sélectionner..." stylesheets="@styles.css" />
+
+            <Label layoutX="330.0" layoutY="310.0" text="Statut de la Carte :" />
+            <ComboBox fx:id="combo_statutCarte" layoutX="330.0" layoutY="330.0" prefWidth="220.0" promptText="Sélectionner..." />
+
+            <!-- Boutons -->
+            <Button fx:id="btn_creer_client" layoutX="150.0" layoutY="450.0" onAction="#creer_client" styleClass="button-green" text="Créer" />
+            <Button fx:id="btn_annuler" layoutX="310.0" layoutY="450.0" onAction="#annuler" styleClass="button-red" text="Annuler" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

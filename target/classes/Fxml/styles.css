@@ -1,0 +1,142 @@
+.body{
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f8;
+    margin: 0;
+    padding: 0;
+}
+/* Barre latérale */
+.side_bar {
+    -fx-background-color: #2E3B4E;
+    -fx-padding: 10;
+}
+
+.side_bar_title {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-padding: 10 0 20 10;
+}
+
+.side_bar_button {
+    -fx-spacing: 10;
+    -fx-alignment: center-left;
+    -fx-padding: 5 0 5 10;
+    -fx-border-radius: 10px;
+}
+
+.side_bar_button:hover {
+    -fx-background-color: #3E4C63;
+    -fx-cursor: hand;
+}
+
+.side_bar_button_text {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.logout_button {
+    -fx-spacing: 10;
+    -fx-padding: 5 0 5 10;
+    -fx-alignment: center-left;
+    -fx-background-color: #D9534F;
+    -fx-border-radius: 15px;
+}
+
+.logout_button:hover {
+    -fx-background-color: #C9302C;
+}
+
+.logout_button_text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+}
+
+/* Zone principale */
+.main_panel {
+    -fx-background-color: linear-gradient(to bottom, #FFA500, #FFFFFF, #1E3A5F);
+    -fx-opacity: 0.7;
+    -fx-padding: 20;
+}
+
+.main_title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333333;
+    -fx-font-style: italic;
+}
+
+.section_title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #444444;
+}
+
+.pane_vu{
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+/*---------------- Client ---------------*/
+.client_panel {
+    -fx-background-color: #F5F5F8;
+    -fx-padding: 20;
+}
+
+.client_title {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.client_button{
+    -fx-padding: 5 0 5 10;
+    -fx-border-radius: 15px;
+}
+.client_button:hover{
+    -fx-background-color: #3E4C63;
+    -fx-cursor: hand;
+}
+.client_button_txt{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+/* create client */
+.button-green {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8px 16px;
+}
+
+.button-green:hover {
+    -fx-background-color: #218838;
+}
+
+.button-red {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8px 16px;
+}
+
+.button-red:hover {
+    -fx-background-color: #c82333;
+}
+
+.text-field {
+    -fx-background-radius: 5;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+}
+
+.combo-box {
+    -fx-background-radius: 5;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+}
